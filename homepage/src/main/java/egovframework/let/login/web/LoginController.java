@@ -55,10 +55,10 @@ public class LoginController {
 		LoginVO resultVO = loginService.actionLogin(loginVO);
 		if(resultVO != null && resultVO.getId() != null && !resultVO.getId().equals("")) {
 			request.getSession().setAttribute("LoginVO", resultVO);
-			return "forward:/index.do";
+			return "forward:/board/main.do";
 		}else {
 			model.addAttribute("loginMessage", egovMessageSource.getMessage("fail.common.login"));
-			return "forward:/index.do";
+			return "forward:/board/main.do";
 		}
 	}
 	
@@ -70,7 +70,7 @@ public class LoginController {
 		
 		request.getSession().invalidate(); //모든 세션을 다 삭제
 		
-		return "forward:/index.do";
+		return "forward:/board/main.do";
 	}
 	
 }

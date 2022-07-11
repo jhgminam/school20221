@@ -1,8 +1,5 @@
 @charset "utf-8";
 html {width:100%;height:100%;margin:0}
-body {position:relative;font-size:12px;font-family:"dotum";color:#515151;margin:0; padding:0;width:100%; height: 100%; }
-h1,h2,h3,h4,h5,h6,ol,ul,li,form,fieldset,input,select,textarea,p,th,td,dt,dd,dl,p,figure {margin:0;padding:0;}
-h1,h2,h3,h4,h5,h6 {font-size:12px;}
 li {list-style-type:none;}
 img,fieldset {border:0;}
 em {font-style:normal;}
@@ -25,7 +22,7 @@ input[type=tel] {
     padding: 0 15px;
     height: 36px;
     border: 1px solid #ddd;
-    width: 260px;
+    width: auto;
     box-sizing: border-box;
     transition: box-shadow .3s, border-color .3s;
 }
@@ -149,9 +146,9 @@ input[type=tel] {
 
 .layer-login .layer-header .logo .img-logo {
     display: block;
-    width: 171px;
-    height: 45px;
-    background:url(../images/common/logo_footer.png) no-repeat;
+    width: 300px;
+    height:	300px;
+    background:url(../images/common/OKDDA_LOG.png) no-repeat;
     text-indent:-9999em;
 }
 

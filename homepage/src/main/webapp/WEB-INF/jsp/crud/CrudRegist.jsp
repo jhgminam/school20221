@@ -43,7 +43,7 @@
 			<button type="submit">등록</button>
 		</c:otherwise>
 	</c:choose>
-		<a: href="/crud/selectList.do">취소</a>
+		<a href="/crud/selectList.do">취소</a>
 	</form>
 
 </body>

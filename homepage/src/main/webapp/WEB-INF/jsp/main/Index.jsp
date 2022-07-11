@@ -14,11 +14,12 @@
 <title>OKDDA</title>
 <link href="/asset/front/css/style.css" rel="stylesheet" />
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 </head>
 <body>
 <c:choose>
 	<c:when test="${empty USER_INFO.id}">
-		<a href="/ogin/egovLoginUsr.do" class="login">로그인</a>
+		<a href="/login/egovLoginUsr.do" class="login">로그인</a>
 	</c:when>
 	<c:otherwise>
 		<a href="/login/actionLogout.do"><c:out value="${USER_INFO.name}"/>님 로그아웃</a>

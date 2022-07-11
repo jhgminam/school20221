@@ -48,7 +48,16 @@ public class BoardController {
 	@Resource(name = "fileMngUtil")
 	private FileMngUtil fileUtil;
 	
+	//메인페이지
+	@RequestMapping(value ="/board/main.do")
+	public String main(@ModelAttribute("searchVO") BoardVO searchVO, HttpServletRequest request, ModelMap model) throws Exception{
 		
+		LoginVO  user = (LoginVO)EgovUserDetailsHelper.getAuthenticatedUser();
+		model.addAttribute("USER_INFO", user);
+		
+		return "board/main";
+	}
+	
 	//BOARD목록 가져오기
 	@RequestMapping(value = "/board/selectList.do")
 	public String selectList(@ModelAttribute("searchVO") BoardVO searchVO, HttpServletRequest request, ModelMap model) throws Exception{
